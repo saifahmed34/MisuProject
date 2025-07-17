@@ -88,7 +88,6 @@ namespace MisuProject.Controllers.FollowUsers
         }
 
         [Authorize]
-        [Authorize]
         [HttpGet("my-followers")]
         public async Task<IActionResult> GetMyFollowers()
         {
