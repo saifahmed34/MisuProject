@@ -126,7 +126,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const followButtons = document.querySelectorAll(".button");
     followButtons.forEach((btn) => {
         btn.addEventListener("click", function () {
-            follow(this);
+            const action = btn.textContent.trim().toLowerCase();
+            follow(this, action);
         });
     });
 
@@ -134,7 +135,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     
 });
 
-function follow(button) {
+function follow(button, action) {
     const msgBox = document.getElementById("msg");
     const msgText = msgBox.querySelector("p");
 
@@ -142,8 +143,12 @@ function follow(button) {
     const card = button.closest(".div1");
     const itemName = card.querySelector("h3").textContent;
 
-    // Set dynamic message
-    msgText.innerHTML = `You are following "<strong>${itemName}</strong>"`;
+    // Set dynamic message based on action
+    if (action === "unfollow") {
+        msgText.innerHTML = `You are not following "<strong>${itemName}</strong>"`;
+    } else {
+        msgText.innerHTML = `You are following "<strong>${itemName}</strong>"`;
+    }
 
     // Show message box
     msgBox.style.display = "block";
