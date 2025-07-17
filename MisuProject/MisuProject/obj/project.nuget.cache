@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ty7nOZfCBM4=",
+  "dgSpecHash": "V0IhmRxjLXs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\MisuProject.csproj",
+  "projectFilePath": "C:\\Users\\saifa\\Documents\\GitHub\\MisuProject\\MisuProject\\MisuProject\\MisuProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saifa\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\saifa\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

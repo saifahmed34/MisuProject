@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\MisuProject.csproj": {}
+    "C:\\Users\\saifa\\Documents\\GitHub\\MisuProject\\MisuProject\\MisuProject\\MisuProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\MisuProject.csproj": {
+    "C:\\Users\\saifa\\Documents\\GitHub\\MisuProject\\MisuProject\\MisuProject\\MisuProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\MisuProject.csproj",
+        "projectUniqueName": "C:\\Users\\saifa\\Documents\\GitHub\\MisuProject\\MisuProject\\MisuProject\\MisuProject.csproj",
         "projectName": "MisuProject",
-        "projectPath": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\MisuProject.csproj",
+        "projectPath": "C:\\Users\\saifa\\Documents\\GitHub\\MisuProject\\MisuProject\\MisuProject\\MisuProject.csproj",
         "packagesPath": "C:\\Users\\saifa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\obj\\",
+        "outputPath": "C:\\Users\\saifa\\Documents\\GitHub\\MisuProject\\MisuProject\\MisuProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
