@@ -28,9 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
 
             if (response.ok && data.token) {
-                localStorage.setItem("token", data.token);
+                //alert(data.token);
+                
+               
+                sessionStorage.clear();
                 message.style.color = "green";
                 message.textContent = "Login successful. Redirecting...";
+                sessionStorage.setItem("token", data.token);
                 setTimeout(() => {
                     window.location.href = "home.html";
                 }, 1500);

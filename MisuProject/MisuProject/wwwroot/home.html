@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="./css/allmin.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <script src="js/Home.js"></script>
+
+
 
 
     <title>SoftQA</title>
+    <script src="js/Home.js"></script>
 
 </head>
 <body>
 <div class="contanier">
     <div class="navdiv">
-        <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        <a href="#" id="logouts"><i class="fa-solid fa-right-from-bracket"></i></a>
         <div class="navlists">
             <nav>
                 <li>
@@ -61,7 +63,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem beatae nesciunt facilis adipisci ab provident placeat, laudantium accusamus
                 </p>
             </div>
-                <button type="submit" class="button"><span>Follow</span><i class="fa-solid fa-user-plus"></i></button></div>
+                <button type="submit" class="button" onclick="follow()"><span>Follow</span><i class="fa-solid fa-user-plus"></i></button></div>
         </div>
         <div class="div1">
             <div class="img1">
@@ -73,6 +75,13 @@
                 </p>
             </div>
                 <button type="submit" class="button"><span>Follow</span><i class="fa-solid fa-user-plus"></i></button></div>
+        </div>
+    </div>
+    <div id="msg">
+        <div class="msgcontan">
+            <button type="submit" id="close-msg" ><i class="fa-solid fa-xmark"></i></button>
+            <p>Your are following "name"</p>
+            <i class="fa-solid fa-check"></i>
         </div>
     </div>
 </div>

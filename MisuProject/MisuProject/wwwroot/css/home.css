@@ -201,7 +201,78 @@ span{
     padding-right: 10px;
     font-size: 25px;
 }
+#msg{
+    width: 420px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid green;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    animation: fadeout 1.5s ;
+    /* animation-iteration-count:; */
+    animation-direction: alternate;
 
 
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#msg .p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fa-check{
+    display: block;
+    background-color: green;
+    color: white;
+    border-radius: 100%;
+    padding: 6px;
+    font-size: 12px;
+}
+.msgcontan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    font-size: 20px;
+}
+.msgcontan p{
+    width: 100%;
 
+}
 
+.fa-xmark:hover{
+    color: red;
+}
+.msgcontan button{
+    position: absolute;
+    background: none;
+    right: 5px;
+    top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+}

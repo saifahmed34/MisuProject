@@ -9,14 +9,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         logoutIcon.addEventListener('click', (e) => {
             e.preventDefault();
             if (confirm("Are you sure you want to logout?")) {
-                localStorage.clear();
+                sessionStorage.clear();
                 alert('Logged out');
                 window.location.href = 'index.html';
             }
         });
     }
 
-    const token = localStorage.getItem('token');
+    const token = sessionStorage.getItem('token');
+    
+    alert(token)
+    
     if (!token) {
         alert("Please login first.");
         return;
@@ -70,7 +73,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             });
 
                             if (res.ok) {
-                                alert("Followed successfully");
+                               // alert("Followed successfully");
                                 buttons[i].textContent = "Unfollow";
                             } else {
                                 const err = await res.text();
@@ -90,7 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             });
 
                             if (res.ok) {
-                                alert("Unfollowed successfully");
+                               // alert("Unfollowed successfully");
                                 buttons[i].textContent = "Follow";
                             } else {
                                 const err = await res.text();
@@ -107,4 +110,47 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
         console.error("User fetch error:", error);
     }
+
+
+    // Close message on 'X' click
+    const closeMsgBtn = document.getElementById("close-msg");
+    const msgBox = document.getElementById("msg");
+
+    if (closeMsgBtn) {
+        closeMsgBtn.addEventListener("click", () => {
+            msgBox.style.display = "none";
+        });
+    }
+
+    // Attach follow function to each button
+    const followButtons = document.querySelectorAll(".button");
+    followButtons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            follow(this);
+        });
+    });
+
+    
+    
 });
+
+function follow(button) {
+    const msgBox = document.getElementById("msg");
+    const msgText = msgBox.querySelector("p");
+
+    // Get the name/title from the same card
+    const card = button.closest(".div1");
+    const itemName = card.querySelector("h3").textContent;
+
+    // Set dynamic message
+    msgText.innerHTML = `You are following "<strong>${itemName}</strong>"`;
+
+    // Show message box
+    msgBox.style.display = "block";
+    msgBox.style.animation = "fadein 0.5s, fadeout 1.5s 1.5s";
+
+    // Hide message box after animation
+    setTimeout(() => {
+        msgBox.style.display = "none";
+    }, 3000);
+}
