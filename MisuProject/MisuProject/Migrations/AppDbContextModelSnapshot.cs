@@ -67,6 +67,46 @@ namespace MisuProject.Migrations
                     b.ToTable("Roles");
                 });
 
+            modelBuilder.Entity("MisuProject.Models.ChatMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sender")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ChatMessages");
+                });
+
+            modelBuilder.Entity("MisuProject.Models.Follow.UserFollow", b =>
+                {
+                    b.Property<Guid>("FollowerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("FolloweeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("FollowedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("FollowerId", "FolloweeId");
+
+                    b.HasIndex("FolloweeId");
+
+                    b.ToTable("FollowUsers");
+                });
+
             modelBuilder.Entity("MisuProject.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -88,18 +128,12 @@ namespace MisuProject.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("OtpExpiration")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Proffession")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ResetOtp")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
@@ -109,24 +143,6 @@ namespace MisuProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("MisuProject.Models.UserFollow", b =>
-                {
-                    b.Property<Guid>("FollowerId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("FolloweeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("FollowedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("FollowerId", "FolloweeId");
-
-                    b.HasIndex("FolloweeId");
-
-                    b.ToTable("FollowUsers");
                 });
 
             modelBuilder.Entity("RoleUser", b =>
@@ -144,7 +160,7 @@ namespace MisuProject.Migrations
                     b.ToTable("RoleUser");
                 });
 
-            modelBuilder.Entity("MisuProject.Models.UserFollow", b =>
+            modelBuilder.Entity("MisuProject.Models.Follow.UserFollow", b =>
                 {
                     b.HasOne("MisuProject.Models.User", null)
                         .WithMany()

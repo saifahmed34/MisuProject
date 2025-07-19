@@ -130,10 +130,12 @@ body{
 .img1{
     width: 100%;
     height: 60%;
+    overflow: hidden;
+    background-color: green;
+    text-align: center;
 }
 .img1 img{
     width: 100%;
-    display: inline-block;
 }
 .div1text1{
     width: 100%;
@@ -142,9 +144,8 @@ body{
 .textcontanier{
 
     position: relative;
-    border-top: 2px solid black;
     padding: 0px 20px;
-    top: 35px;
+    top: 0px;
 }
 .textcontanier h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -216,7 +217,6 @@ span{
     /* animation-iteration-count:; */
     animation-direction: alternate;
 
-
 }
 @keyframes fadein {
     0%{
@@ -275,4 +275,74 @@ span{
     font-size: 22px;
     cursor: pointer;
     border: 0;
+}
+.chatbn{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transform: translateX(-150%);
+}
+.chatbn button{
+     font-size: 50px;
+     background-color: transparent;
+     border: 0;
+     cursor: pointer;
+     color: #062f34;
+     transition-duration: 0.5s;
+}
+.contanier:hover .chatbn button{
+    transform: translateX(150%);
+}
+.chat{
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    bottom:10px;
+    left: 200px;
+    border: 4px solid rgb(255, 248, 236);
+    outline: 0;
+    box-shadow: none;
+    border-radius: 20px;
+    background-image:url(../photo/1810e045-bab5-4366-8001-0592acfbd482.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+      box-shadow: rgba(0, 0, 0, 0.4) 0 30px 90px;
+}
+.chat form #chat{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-51%);
+    bottom: 10px;
+    width: 80%;
+    height: 7%;
+    display: block;
+    border-radius: 10px;
+    outline: none;
+    border: 5px solid rgb(255, 248, 236);
+    z-index: 999;
+}
+form input::placeholder{
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.bn{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 25px;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+.fa-x{
+    color: white;
+}
+.fa-x:hover{
+    color: red;
 }

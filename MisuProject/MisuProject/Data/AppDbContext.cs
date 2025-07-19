@@ -12,6 +12,8 @@ namespace MisuProject.Data
         public DbSet<UserFollow> FollowUsers { get; set; }
 
         public DbSet<OtpVerification> OtpVerifications { get; set; }
+        
+        public DbSet<ChatMessage> ChatMessages { get; set; }
 
 
 

@@ -4,7 +4,9 @@ const Follow_Url = `${Api_Url}follow/`;
 
 document.addEventListener("DOMContentLoaded", async () => {
     const logoutIcon = document.getElementById('logouts');
+    const token = sessionStorage.getItem('token');
 
+    // Logout
     if (logoutIcon) {
         logoutIcon.addEventListener('click', (e) => {
             e.preventDefault();
@@ -16,146 +18,135 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     }
 
-    const token = sessionStorage.getItem('token');
-
-    alert(token)
-
     if (!token) {
         alert("Please login first.");
         return;
     }
 
-    let followingList = [];
-
-    try {
-        // Get current following
-        const followResponse = await fetch(`${Follow_Url}my-following`, {
-            headers: {
-                'Authorization': `Bearer ${token}`
-            }
-        });
-        followingList = await followResponse.json();
-    } catch (err) {
-        console.error("Error loading following list:", err);
-    }
-
-    try {
-        const response = await fetch(`${Auth_Url}users`, {
-            method: "GET",
-            headers: { "Content-Type": "application/json" }
-        });
-
-        const users = await response.json();
-        const h3elements = document.querySelectorAll('h3');
-        const buttons = document.querySelectorAll('.button');
-
-        users.forEach((user, i) => {
-            if (h3elements[i]) h3elements[i].textContent = user.name;
-            if (buttons[i]) {
-                buttons[i].setAttribute('data-user-id', user.id);
-
-                const isFollowing = followingList.includes(user.name);
-                buttons[i].textContent = isFollowing ? "Unfollow" : "Follow";
-                buttons[i].addEventListener('click', async (e) => {
-                    e.preventDefault();
-
-                    const followeeId = user.id;
-                    const action = buttons[i].textContent.trim().toLowerCase();
-
-                    if (action === "follow") {
-                        try {
-                            const res = await fetch(`${Follow_Url}${followeeId}`, {
-                                method: "POST",
-                                headers: {
-                                    'Content-Type': 'application/json',
-                                    'Authorization': `Bearer ${token}`
-                                }
-                            });
-
-                            if (res.ok) {
-                                // alert("Followed successfully");
-                                buttons[i].textContent = "Unfollow";
-                            } else {
-                                const err = await res.text();
-                                alert("Error: " + err);
-                            }
-                        } catch (err) {
-                            console.error("Follow failed", err);
-                        }
-                    } else if (action === "unfollow") {
-                        try {
-                            const res = await fetch(`${Follow_Url}${followeeId}`, {
-                                method: "DELETE",
-                                headers: {
-                                    'Content-Type': 'application/json',
-                                    'Authorization': `Bearer ${token}`
-                                }
-                            });
-
-                            if (res.ok) {
-                                // alert("Unfollowed successfully");
-                                buttons[i].textContent = "Follow";
-                            } else {
-                                const err = await res.text();
-                                alert("Error: " + err);
-                            }
-                        } catch (err) {
-                            console.error("Unfollow failed", err);
-                        }
-                    }
-                });
-            }
-        });
-
-    } catch (error) {
-        console.error("User fetch error:", error);
-    }
-
-
-    // Close message on 'X' click
-    const closeMsgBtn = document.getElementById("close-msg");
+    const userCardsContainer = document.getElementById("userCardsContainer");
     const msgBox = document.getElementById("msg");
+    const msgText = msgBox.querySelector("p");
+    const closeMsgBtn = document.getElementById("close-msg");
 
+    // Close follow message box
     if (closeMsgBtn) {
         closeMsgBtn.addEventListener("click", () => {
             msgBox.style.display = "none";
         });
     }
 
-    // Attach follow function to each button
-    const followButtons = document.querySelectorAll(".button");
-    followButtons.forEach((btn) => {
-        btn.addEventListener("click", function () {
-            const action = btn.textContent.trim().toLowerCase();
-            follow(this, action);
+    let followingList = [];
+
+    try {
+        const followRes = await fetch(`${Follow_Url}my-following`, {
+            headers: { 'Authorization': `Bearer ${token}` }
         });
-    });
-
-
-
-});
-
-function follow(button, action) {
-    const msgBox = document.getElementById("msg");
-    const msgText = msgBox.querySelector("p");
-
-    // Get the name/title from the same card
-    const card = button.closest(".div1");
-    const itemName = card.querySelector("h3").textContent;
-
-    // Set dynamic message based on action
-    if (action === "unfollow") {
-        msgText.innerHTML = `You are not following "<strong>${itemName}</strong>"`;
-    } else {
-        msgText.innerHTML = `You are following "<strong>${itemName}</strong>"`;
+        followingList = await followRes.json();
+    } catch (err) {
+        console.error("Error fetching following list:", err);
     }
 
-    // Show message box
-    msgBox.style.display = "block";
-    msgBox.style.animation = "fadein 0.5s, fadeout 1.5s 1.5s";
+    try {
+        const userRes = await fetch(`${Auth_Url}users`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" }
+        });
 
-    // Hide message box after animation
-    setTimeout(() => {
-        msgBox.style.display = "none";
-    }, 3000);
-}
+        const users = await userRes.json();
+
+        users.forEach((user) => {
+            const isFollowing = followingList.includes(user.name);
+
+            const card = document.createElement("div");
+            card.className = "div1";
+
+            card.innerHTML = `
+                <div class="img1">
+                    <img src="./photo/WhatsApp Image 2025-07-20 at 08.22.54_7c17943e.jpg" alt="User Image" />
+                </div>
+                <div class="div1text1">
+                    <div class="textcontanier">
+                        <h3>${user.name}</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <button type="button" class="button" data-user-id="${user.id}">
+                        ${isFollowing ? "Unfollow" : "Follow"} <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                </div>
+            `;
+
+            const button = card.querySelector(".button");
+
+            button.addEventListener("click", async (e) => {
+                e.preventDefault();
+                const action = button.textContent.trim().toLowerCase();
+                const followeeId = user.id;
+
+                if (action === "follow") {
+                    try {
+                        const res = await fetch(`${Follow_Url}${followeeId}`, {
+                            method: "POST",
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${token}`
+                            }
+                        });
+
+                        if (res.ok) {
+                            button.textContent = "Unfollow";
+                            showFollowMessage(user.name, "follow");
+                        } else {
+                            alert("Error: " + await res.text());
+                        }
+                    } catch (err) {
+                        console.error("Follow error:", err);
+                    }
+                } else if (action === "unfollow") {
+                    try {
+                        const res = await fetch(`${Follow_Url}${followeeId}`, {
+                            method: "DELETE",
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${token}`
+                            }
+                        });
+
+                        if (res.ok) {
+                            button.textContent = "Follow";
+                            showFollowMessage(user.name, "unfollow");
+                        } else {
+                            alert("Error: " + await res.text());
+                        }
+                    } catch (err) {
+                        console.error("Unfollow error:", err);
+                    }
+                }
+            });
+
+            userCardsContainer.appendChild(card);
+        });
+
+    } catch (error) {
+        console.error("User fetch error:", error);
+    }
+
+    function showFollowMessage(name, action) {
+        if (!msgBox || !msgText) return;
+
+        msgText.innerHTML =
+            action === "unfollow"
+                ? `You are not following "<strong>${name}</strong>"`
+                : `You are following "<strong>${name}</strong>"`;
+
+        msgBox.style.display = "block";
+        msgBox.style.animation = "fadein 0.5s, fadeout 1.5s 1.5s";
+
+        setTimeout(() => {
+            msgBox.style.display = "none";
+        }, 3000);
+    }
+});
+   
+
+
+

@@ -15,8 +15,8 @@ namespace MisuProject.Models
 
         public List<Role> Roles { get; set; } = new();
 
-        /*public string? ResetOtp { get; set; }
-        public DateTime? OtpExpiration { get; set; }*/
+        /*        public string? ResetOtp { get; set; }
+                public DateTime? OtpExpiration { get; set; }*/
         //public List<FollowUser> FollowUsers { get; set; }
 
     }
