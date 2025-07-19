@@ -1,0 +1,420 @@
+
+body{
+    padding: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 48px;
+    background-color: #e1e5e6;
+}
+.contaner{
+    background-color: black;
+    display: flex;
+    height: 90vh;
+}
+.divleft{
+    background-color: white;
+    justify-content: left;
+    width: 50%;
+    position: relative;
+}
+.divright{
+    justify-content: right;
+    width: 50%;
+}
+.softqa{
+    width: 80%;
+    height: 7%;
+    margin: auto;
+    position:absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+.tag{
+    
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    position: absolute;
+    left: 30px;
+
+}
+.tag p{
+    background-color: #073d44;
+    padding: 3px 6px 10px 6px;
+    color: white;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+}
+.text{
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+    height: 100%;
+}
+.text p{
+    font-size: 30px;
+    position: relative;
+    left: 0;
+    top: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#073d44;
+}
+.text1{
+    background-color: white;
+    display: inline-block;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top:15%;
+    transform: translateX(-50%);
+    
+}
+.text1 h1{
+    position: relative;
+    left: 31px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+.text1 p{
+    position: relative;
+    left: 31px;
+    font-size: 17px;
+    color: #6d6d6d;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.divleft:hover .button{
+    top: 43%;
+    opacity: 1;
+}
+.mailtext{
+    color: black;
+    position: absolute;
+    left:31px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    font-size: 15px;
+    height: 20%;
+}
+
+.fa-envelope{
+    position: absolute;
+    left: 31px;
+    top: 15%;
+    color: #6d6d6d;
+    font-size: 22px;
+    padding-top:8px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    border: 2px #bbbfc2 solid;
+    border-right: 0 transparent solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition-duration: 0.5s;
+    background-color: white;
+    z-index: 1;
+}
+.mail{
+    position: absolute;
+    left: 64px;
+    width: 60%;
+    height: 35px;
+    top: 15%;
+    background-color: white;
+    border: 2px solid #bbbfc2;
+    border-left: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+.mail::placeholder{
+    position: relative;
+    left: 10px;
+    top: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mail:focus{
+    outline: none;
+}
+
+.malecon{
+    width: 70%;
+    height: 65px;
+}
+.malecon:hover .fa-envelope{
+border-color: #028596;
+    
+}
+.malecon:hover .mail{
+    border-color:#028596;
+    
+}
+
+.button{
+    width: 63%;
+    height: 40px;
+    position: absolute;
+    left:6%;
+    top: 20%;
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+.blog{
+    width: 100%;
+    height: 100%;
+    color:white;
+    border-radius: 10px;
+    background-color: #006c7a;
+    border: 0;
+    border-color: #073d4400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+.blog:hover{
+    background-color: #073d44;
+    transform: scale(0.95);
+}
+.blog:active{
+    background-color: #063137;
+}
+
+.divright {
+     margin: 0;
+     background-image: 
+     radial-gradient(circle at top right, rgba(255,255,255,0.3), transparent 60%),
+    linear-gradient(150deg, #033c42, #1e5e61);
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.iconcon{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+}
+.texth{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 12%;
+}
+.texth h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: lighter;
+    font-size: 55px;
+    position: absolute;
+    left: 18%;
+}
+.texth .coma{
+    width: 98%;
+    height: auto;
+    text-align: right;
+    font-size: 60px;
+    padding-top: 0;
+    padding-right:45px ;
+    padding-bottom: 0;
+    margin: 0;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0px;
+    font-weight: 400;
+    left: 10%;
+}
+.ptexth{
+    width: 80%;
+    height: 30%;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translateX(-52%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    /
+}
+.ptexth p{
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgdiv{
+    width: 9%;
+    height: 24%;
+    border-radius: 100%;
+    border:2px white solid ;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+.imgdiv img{
+    width: 100%;
+}
+.imgname{
+   
+    width: 24%;
+    height: 8%;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 12%;
+}
+.imgname p{
+    position: absolute;
+    bottom: -220%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.imgjop p{
+    width: 40%;
+    font-size: 15px;
+    position: absolute;
+    top: 57%;
+    left: 12%;
+    font-weight: lighter;
+}
+.iconcon{
+    width:80%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.mediaicon{
+    height: 20%;
+    width: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mediaicon p{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 5px;
+    margin: 0;
+}
+.fa-discord{
+    font-size: 22px;
+    padding-right: 10px;
+}
+.fa-mailchimp{
+    font-size: 25px;
+    padding-right: 5px;
+}
+.mediaicon img{
+    width: 22%;
+    position: relative;
+    right: 2%;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    padding-right: 0;
+    margin-right: 0;
+
+}
+.mediaicon .gra{
+    padding-left: 5px;
+}
+.mediaicon p{
+    padding: 0;
+    margin: 0;
+}
+.mediaicon .hell{
+    background-color: transparent;
+    color: gray;
+    position: relative;
+}
+.fa-intercom{
+    font-size: 25px;
+    padding-right: 5px;
+}
+.fa-dropbox{
+    font-size: 20px;
+    padding-right: 5px;
+}
+.join-line {
+    display: flex;
+    align-items: center;
+      background-color: transparent; 
+    padding: 10px 20px;
+     color: rgba(255, 255, 255, 0.656);
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 75%;
+    left: 16%;
+    width: 63%;
+    }
+
+    .join-text {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    }
+
+.line {
+flex: 1;
+height: 1px;
+background-color: #ffffff; 
+margin-left: 10px;
+opacity: 0.6; 
+}
+.fa-square{
+    font-size: 20px;
+    padding-right: 10px;
+    margin-bottom: 4px;
+}
+#msg{
+    position: absolute;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    left: 21.9%;
+    padding-bottom: 10px;
+}
+#msg.error{
+    position: absolute;
+    top: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    left: 16%;
+    padding-bottom: 10px;
+    color: red;
+}
