@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const token = sessionStorage.getItem('token');
-    
+
     alert(token)
-    
+
     if (!token) {
         alert("Please login first.");
         return;
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             });
 
                             if (res.ok) {
-                               // alert("Followed successfully");
+                                // alert("Followed successfully");
                                 buttons[i].textContent = "Unfollow";
                             } else {
                                 const err = await res.text();
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             });
 
                             if (res.ok) {
-                               // alert("Unfollowed successfully");
+                                // alert("Unfollowed successfully");
                                 buttons[i].textContent = "Follow";
                             } else {
                                 const err = await res.text();
@@ -131,8 +131,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     });
 
-    
-    
+
+
 });
 
 function follow(button, action) {
