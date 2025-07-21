@@ -5,7 +5,15 @@ const Follow_Url = `${Api_Url}follow/`;
 document.addEventListener("DOMContentLoaded", async () => {
     const logoutIcon = document.getElementById('logouts');
     const token = sessionStorage.getItem('token');
-
+    const closeChat = document.getElementById('closeChat');
+    const msgbox = document.getElementById('chat');
+/*    closeChat.addEventListener('click', (e) => {
+        //e.preventDefault();
+        msgbox.style.display = 'none';
+        
+    })*/
+    
+    
     // Logout
     if (logoutIcon) {
         logoutIcon.addEventListener('click', (e) => {
