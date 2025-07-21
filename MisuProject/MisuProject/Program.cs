@@ -4,6 +4,9 @@ using Microsoft.IdentityModel.Tokens;
 using MisuProject.Data;
 using MisuProject.Models.AuthModels;
 using System.Text;
+using MisuProject.Hubs;
+
+//using MisuProject.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +33,8 @@ builder.Services.AddEndpointsApiExplorer();
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
 
+builder.Services.AddSignalR();
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -47,7 +52,23 @@ builder.Services.AddAuthentication(options =>
         ValidAudience = jwtSettings["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
+    options.Events = new JwtBearerEvents
+    {
+        OnMessageReceived = context =>
+        {
+            var accessToken = context.Request.Query["access_token"];
+            var path = context.HttpContext.Request.Path;
+            if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/chatHub"))
+            {
+                context.Token = accessToken;
+            }
+            return Task.CompletedTask;
+        }
+    };
 });
+    
+    
+
 
 builder.Services.AddAuthorization();
 
@@ -78,7 +99,8 @@ app.UseCors("AllowAll");
 
 app.UseAuthentication(); 
 app.UseAuthorization();
-
+app.UseWebSockets();
+app.MapHub<ChatHub>("/chatHub");
 app.MapControllers();
 
 app.Run();

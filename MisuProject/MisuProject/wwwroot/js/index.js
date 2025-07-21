@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener("submit", async function (e) {
         e.preventDefault();
+        
 
         const email = document.querySelector("#mail").value.trim();
         const password = document.querySelector("#pass").value.trim();
@@ -24,14 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 body: JSON.stringify({ email, password })
             });
+            
 
             const data = await response.json();
-
+            console.log(JSON.stringify(data));
+            console.log('==================================');
+            console.log(JSON.stringify(data));
+            console.log("Received token:", data.token); // Better for debugging
+            sessionStorage.setItem("token", data.token);
+            
             if (response.ok && data.token) {
-                //alert(data.token);
-                
+                alert(data.token);
+                sessionStorage.setItem("email", email);
+                //alert(email)
                
-                sessionStorage.clear();
+               
                 message.style.color = "green";
                 message.textContent = "Login successful. Redirecting...";
                 sessionStorage.setItem("token", data.token);

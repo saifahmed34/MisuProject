@@ -61,6 +61,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
         const users = await userRes.json();
+        
+        const email = sessionStorage.getItem("email")
+        alert(JSON.stringify(email));
+        console.log(JSON.stringify(userRes) );
+        console.log(JSON.stringify(users));
+        //console.log(users.find());
+        console.log(token);
+        alert(JSON.stringify(users));
 
         users.forEach((user) => {
             const isFollowing = followingList.includes(user.name);

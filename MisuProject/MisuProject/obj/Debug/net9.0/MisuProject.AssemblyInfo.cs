@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MisuProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75616545505eb1ae3ff9dd18691c8b3eed8a75c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22b934ce04d81aa75d680f43cb1ed1a3d915a6cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MisuProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MisuProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
