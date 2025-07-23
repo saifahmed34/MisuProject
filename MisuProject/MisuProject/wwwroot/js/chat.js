@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", async () => {
     const chatMessages = document.getElementById('chatMessages');
     const messageInput = document.getElementById('messageInput');
 
