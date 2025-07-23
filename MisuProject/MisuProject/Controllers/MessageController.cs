@@ -28,7 +28,7 @@ public class MessageController : ControllerBase
         var message = new ChatMessage
         {
             Id = Guid.NewGuid(),
-            Message = dto.Message,
+            Content = dto.Message,
             Sender = dto.Sender,
             Timestamp = DateTime.UtcNow
         };
@@ -46,7 +46,7 @@ public class MessageController : ControllerBase
             .OrderBy(m => m.Timestamp)
             .Select(m => new ChatMessageDto
             {
-                Message = m.Message,
+                Message = m.Content,
                 Sender = m.Sender,
                 Timestamp = m.Timestamp
             })
