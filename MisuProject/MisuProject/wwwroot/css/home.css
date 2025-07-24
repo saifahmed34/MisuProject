@@ -114,7 +114,7 @@ body{
     padding: 0 25px;
 }
 .div1{
-    width:40%;
+    width:25%;
     height: 70%;
     margin: 15px;
     transition: all 0.2s;
@@ -276,71 +276,6 @@ span{
     cursor: pointer;
     border: 0;
 }
-
-.chat{
-    width: 20%;
-    height: 60%;
-    position: absolute;
-    bottom:10px;
-    left: 25px;
-    border: 4px solid rgb(255, 248, 236);
-    outline: 0;
-    box-shadow: none;
-    border-radius: 20px;
-    background-image:url(../photo/1810e045-bab5-4366-8001-0592acfbd482.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-      overflow: hidden;
-}
-.chat::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.42);
-}
-.chat form #chat{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-51%);
-    bottom: 10px;
-    width: 80%;
-    height: 7%;
-    display: block;
-    border-radius: 10px;
-    outline: none;
-    border: 5px solid rgb(255, 248, 236);
-    z-index: 999;
-}
-.chat input{
-    position: absolute;
-    bottom: 10px;
-    height: 10%;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 900;
-    border: 0;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-}
-.chat input::placeholder{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    color: silver;
-}
-.chat input:focus{ 
-    outline: none;
-}
 .bn{
     position: absolute;
     right: 30px;
@@ -350,12 +285,6 @@ span{
     cursor: pointer;
     background-color: transparent;
     border: 0;
-}
-.fa-x{
-    color: white;
-}
-.fa-x:hover{
-    color: red;
 }
 .chatbutton{
     width: 5%;
@@ -376,25 +305,3 @@ span{
 .fa-message{
     font-size: 30px;
 }
-#chatMessages{
-    width: 50%;
-    height: 10%;
-    background-color: silver;
-    border-radius:0px 15px 15px 15px ;
-    position: absolute;
-    top: 5%;
-    left: 1%;
-    z-index: 999;
-}
-#chatMessages2{
-     width: 50%;
-    height: 10%;
-    background-color: silver;
-    border-radius: 15px 0px 15px 15px ;
-    position: absolute;
-    top: 20%;
-    right: 1%;
-    z-index: 999;
-}
-
-

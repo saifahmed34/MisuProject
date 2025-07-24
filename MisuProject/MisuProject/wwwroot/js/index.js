@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.setItem("token", data.token);
             
             if (response.ok && data.token) {
-                alert(data.token);
+               // alert(data.token);
                 sessionStorage.setItem("email", email);
                 //alert(email)
                

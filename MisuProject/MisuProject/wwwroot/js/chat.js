@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const chatMessages = document.getElementById('chatMessages');
-    const messageInput = document.getElementById('messageInput');
-
+    const messageInput = document.querySelector('input[name="message"]');
+    const logoutButton = document.getElementById('logouts');
 
     const token = sessionStorage.getItem('token');
     const currentUser = sessionStorage.getItem('email'); // Get current user email
@@ -61,11 +60,45 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Display a message bubble
     function appendMessage(sender, content, isCurrentUser) {
-        const div = document.createElement('div');
-        div.className = isCurrentUser ? 'message message-left' : 'message message-right';
-        div.innerHTML = `<strong>${sender}:</strong> ${content}`;
-        chatMessages.appendChild(div);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        const chatText = document.querySelector('.chattext');
+
+        // Wrapper to prevent overlapping
+        const wrapper = document.createElement('div');
+        wrapper.className = 'message-wrapper';
+
+        const messageDiv = document.createElement('div');
+        messageDiv.className = isCurrentUser ? 'message' : 'message2';
+
+        const usernameDiv = document.createElement('div');
+        usernameDiv.className = isCurrentUser ? 'username' : 'username2';
+        const usernameP = document.createElement('p');
+        usernameP.textContent = sender;
+        usernameDiv.appendChild(usernameP);
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = isCurrentUser ? 'content' : 'content2';
+        const contentP = document.createElement('p');
+        contentP.textContent = content;
+        contentDiv.appendChild(contentP);
+
+        const timeDiv = document.createElement('div');
+        timeDiv.className = isCurrentUser ? 'time' : 'time2';
+        const timeP = document.createElement('p');
+        timeP.textContent = new Date().toLocaleTimeString();
+        timeDiv.appendChild(timeP);
+
+        messageDiv.appendChild(usernameDiv);
+        messageDiv.appendChild(contentDiv);
+        messageDiv.appendChild(timeDiv);
+
+        // Add message to wrapper
+        wrapper.appendChild(messageDiv);
+
+        // Append wrapper to chat area
+        chatText.appendChild(wrapper);
+
+        // Scroll to bottom
+        chatText.scrollTop = chatText.scrollHeight;
     }
 
     // Load chat history from the API
@@ -85,6 +118,12 @@ document.addEventListener("DOMContentLoaded", async () => {
             console.error('Failed to load chat history:', err);
         }
     }
+
+    // Logout logic
+    logoutButton.addEventListener('click', () => {
+        sessionStorage.clear();
+        window.location.href = 'index.html';
+    });
 
     // Start connection
     startConnection();

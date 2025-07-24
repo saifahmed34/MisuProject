@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/allmin.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/chat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
-   
-
-    <title>SoftQA - Chat</title>
-    
+    <title>Chat</title>
 </head>
 <body>
-<script src="js/chat.js"></script>
-<section class="contanier">
-    <div class="navdiv">
-        <div class="tag hvr-underline-from-center"><a href="home.html"><p>{...}</p></a></div>
-        <div class="navlists">
-            <nav>
-                <li><a href="home.html" class="a1 hvr-underline-from-center"><span>Home</span></a></li>
-                <li><a href="#" class="a2 hvr-underline-from-center">About</a></li>
-                <li><a href="#" class="a3 hvr-underline-from-center">Contact</a></li>
-            </nav>
-        </div>
-        <a href="#" id="logouts"><i class="fa-solid fa-right-from-bracket"></i></a>
-    </div>
-    <section class="main">
-        <div class="chatcontanier">
-            <div class="chattext" id="chatMessages">
-                <!-- Messages will be inserted here by JavaScript -->
+    <section class="contanier">
+        <div class="navdiv">
+            <div class="chatbutton">
+                <button class="hvr-underline-from-center"><i class="fa-regular fa-message"></i></button>
             </div>
-            <div class="chatbn">
-                <div class="bn">
-                    <input type="text" id="messageInput"  placeholder="Enter your message then press Enter...">
+            <a href="#" id="logouts"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <div class="tag hvr-underline-from-center"><a href="home.html"><p>{...}</p></a></div>
+            <div class="navlists">
+                <nav>
+                    <li><a href="#" class="a1 hvr-unlderline-from-center"><span>Home</span></a></li>
+                    <li><a href="#" class="a2 hvr-underline-from-center">About</a></li>
+                    <li><a href="#" class="a3 hvr-underline-from-center">Contact</a></li>
+                </nav>
+            </div>
+        </div>
+        <section class="main">
+            <div class="chatcontanier">
+                <div class="chattext">
+                    <div class="chatbn">
+                        <div class="bn">
+                            <input type="text" name="message" placeholder="Enter you message then press Enter...">
+                        </div>
+                    </div>
+
+                     </div>
+                
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
-</section>
-
 </body>
 </html>
