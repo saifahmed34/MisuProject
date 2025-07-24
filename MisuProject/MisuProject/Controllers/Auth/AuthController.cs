@@ -93,7 +93,8 @@ namespace MisuProject.Controllers.Auth
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return Ok("User registered and role 'User' assigned successfully.");
+            return Ok(new { message = "User registered and role 'User' assigned successfully." });
+
         }
 
 

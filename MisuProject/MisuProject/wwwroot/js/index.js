@@ -43,9 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 message.style.color = "green";
                 message.textContent = "Login successful. Redirecting...";
                 sessionStorage.setItem("token", data.token);
-                setTimeout(() => {
-                    window.location.href = "home.html";
-                }, 1500);
+  
             } else {
                 message.style.color = "red";
                 message.textContent = data.message || "Login failed. Please try again.";
