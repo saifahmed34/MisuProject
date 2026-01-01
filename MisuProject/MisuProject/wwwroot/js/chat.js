@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const connection = new signalR.HubConnectionBuilder()
-        .withUrl("http://localhost:5189/chatHub", {
+        .withUrl("/chatHub", {
             accessTokenFactory: () => token
         })
         .configureLogging(signalR.LogLevel.Information)

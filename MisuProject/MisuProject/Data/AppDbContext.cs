@@ -2,7 +2,6 @@
 using MisuProject.Models;
 using MisuProject.Models.AuthModels;
 using MisuProject.Models.Follow;
-using MisuProject.Models.ProductModels;
 
 namespace MisuProject.Data
 {
@@ -13,12 +12,12 @@ namespace MisuProject.Data
         public DbSet<UserFollow> FollowUsers { get; set; }
 
         public DbSet<OtpVerification> OtpVerifications { get; set; }
-        
+
         public DbSet<ChatMessage> ChatMessages { get; set; }
-        
-        public DbSet<Cart> Carts { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<CartItem> CartItems { get; set; }
+
+        //public DbSet<Cart> Carts { get; set; }
+        //public DbSet<Product> Products { get; set; }
+        //public DbSet<CartItem> CartItems { get; set; }
 
 
 

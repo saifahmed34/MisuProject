@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using MisuProject.Data;
+using MisuProject.Hubs;
 using MisuProject.Models.AuthModels;
 using System.Text;
-using MisuProject.Hubs;
 
 //using MisuProject.Hubs;
 
@@ -66,8 +66,8 @@ builder.Services.AddAuthentication(options =>
         }
     };
 });
-    
-    
+
+
 
 
 builder.Services.AddAuthorization();
@@ -97,7 +97,7 @@ app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseCors("AllowAll");
 
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseWebSockets();
 app.MapHub<ChatHub>("/chatHub");

@@ -1,4 +1,4 @@
-const Api_Url = 'http://localhost:5189/api/';
+const Api_Url = '/api/';
 const Auth_Url = `${Api_Url}auth/`;
 const Follow_Url = `${Api_Url}follow/`;
 

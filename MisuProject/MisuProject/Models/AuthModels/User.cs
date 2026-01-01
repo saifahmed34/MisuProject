@@ -1,5 +1,5 @@
 ﻿using MisuProject.Models.AuthModels;
-using MisuProject.Models.ProductModels;
+
 
 namespace MisuProject.Models
 {
@@ -15,8 +15,8 @@ namespace MisuProject.Models
         public required string Status { get; set; }
 
         public List<Role> Roles { get; set; } = new();
-        public List<Orders> Orders { get; set; } = new();
-        public Cart Cart { get; set; } = new();
+        //public List<Orders> Orders { get; set; } = new();
+        //public Cart Cart { get; set; } = new();
 
         /*        public string? ResetOtp { get; set; }
                 public DateTime? OtpExpiration { get; set; }*/

@@ -1,0 +1,10 @@
+services:
+  misuapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5189:5189"   # host:container
+    environment:
+      ASPNETCORE_URLS: "http://+:5189"
+      ConnectionStrings__connect: "Server=host.docker.internal,1433;Database=Misu;User Id=sa;Password=1234;TrustServerCertificate=True;"

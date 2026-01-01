@@ -1,4 +1,4 @@
-const Api_Url = 'http://localhost:5189/api/auth/';
+const Api_Url = 'api/auth/';
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("#loginForm");
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 message.style.color = "green";
                 message.textContent = "Login successful. Redirecting...";
                 sessionStorage.setItem("token", data.token);
+                window.location.href = "home.html";
   
             } else {
                 message.style.color = "red";

@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\migrations\\20250710111510_added otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\migrations\\20250710111510_added otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\models\\authmodels\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\models\\authmodels\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\models\\authmodels\\otpverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\models\\authmodels\\otpverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\models\\authmodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\models\\authmodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\models\\followmodels\\userfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\models\\followmodels\\userfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\models\\chatmodels\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\models\\chatmodels\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\controllers\\followusers\\followcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\controllers\\followusers\\followcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\wwwroot\\js\\newpass.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\js\\newpass.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250710111510_added otp.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Migrations\\20250710111510_added otp.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Migrations\\20250710111510_added otp.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Migrations\\20250710111510_added otp.cs",
+              "RelativeToolTip": "MisuProject\\Migrations\\20250710111510_added otp.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:34:32.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\Role.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Models\\AuthModels\\Role.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\Role.cs",
+              "RelativeToolTip": "MisuProject\\Models\\AuthModels\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:34:20.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OtpVerification.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\OtpVerification.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Models\\AuthModels\\OtpVerification.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\OtpVerification.cs",
+              "RelativeToolTip": "MisuProject\\Models\\AuthModels\\OtpVerification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:34:17.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatMessage.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\ChatModels\\ChatMessage.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Models\\ChatModels\\ChatMessage.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\ChatModels\\ChatMessage.cs",
+              "RelativeToolTip": "MisuProject\\Models\\ChatModels\\ChatMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:33:37.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\User.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Models\\AuthModels\\User.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\User.cs",
+              "RelativeToolTip": "MisuProject\\Models\\AuthModels\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:33:05.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "MisuProject\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:32:27.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Program.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Program.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Program.cs",
+              "RelativeToolTip": "MisuProject\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAtwCEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:31:50.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Dockerfile",
+              "RelativeDocumentMoniker": "MisuProject\\Dockerfile",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Dockerfile",
+              "RelativeToolTip": "MisuProject\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-31T21:29:42.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FollowController.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Controllers\\FollowUsers\\FollowController.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Controllers\\FollowUsers\\FollowController.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Controllers\\FollowUsers\\FollowController.cs",
+              "RelativeToolTip": "MisuProject\\Controllers\\FollowUsers\\FollowController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAApwEwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:29:05.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserFollow.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\FollowModels\\UserFollow.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Models\\FollowModels\\UserFollow.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\FollowModels\\UserFollow.cs",
+              "RelativeToolTip": "MisuProject\\Models\\FollowModels\\UserFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:29:05.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FollowController.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs",
+              "ToolTip": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:42:05.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\appsettings.json",
+              "RelativeDocumentMoniker": "MisuProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\appsettings.json",
+              "RelativeToolTip": "MisuProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-31T21:29:05.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Controllers\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Controllers\\Auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Controllers\\Auth\\AuthController.cs",
+              "RelativeToolTip": "MisuProject\\Controllers\\Auth\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T21:29:05.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "newpass.js",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\newpass.js",
+              "RelativeDocumentMoniker": "MisuProject\\wwwroot\\js\\newpass.js",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\newpass.js",
+              "RelativeToolTip": "MisuProject\\wwwroot\\js\\newpass.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-31T21:29:05.344Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

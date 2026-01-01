@@ -1,4 +1,4 @@
-    const Api_Url = 'http://localhost:5189/api/auth/'
+    const Api_Url = '/api/auth/'
     document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("resetpass");
     const emailInput = document.getElementById("mail");
