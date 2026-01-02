@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,12 +15,28 @@
       "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\dtos\\authdtos\\registerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\dtos\\authdtos\\registerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|solutionrelative:misuproject\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73703049-E707-4EBE-A78A-8F4979BD4990}|MisuProject\\MisuProject.csproj|c:\\users\\saifa\\desktop\\folder2\\misuproject\\misuproject\\misuproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -74,32 +94,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\register.html",
+              "RelativeDocumentMoniker": "MisuProject\\wwwroot\\register.html",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\register.html",
+              "RelativeToolTip": "MisuProject\\wwwroot\\register.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-01T14:26:49.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterDtos.cs",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Dtos\\AuthDtos\\RegisterDtos.cs",
+              "RelativeDocumentMoniker": "MisuProject\\Dtos\\AuthDtos\\RegisterDtos.cs",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Dtos\\AuthDtos\\RegisterDtos.cs",
+              "RelativeToolTip": "MisuProject\\Dtos\\AuthDtos\\RegisterDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T14:24:22.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "MisuProject\\wwwroot\\css\\home.css",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "MisuProject\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAuwHUBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-01T14:18:03.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\index.js",
+              "RelativeDocumentMoniker": "MisuProject\\wwwroot\\js\\index.js",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\index.js",
+              "RelativeToolTip": "MisuProject\\wwwroot\\js\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-01T14:05:43.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Home.js",
+              "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\Home.js",
+              "RelativeDocumentMoniker": "MisuProject\\wwwroot\\js\\Home.js",
+              "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\Home.js",
+              "RelativeToolTip": "MisuProject\\wwwroot\\js\\Home.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-01T14:05:40.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "MisuProject\\wwwroot\\index.html",
               "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\index.html",
               "RelativeToolTip": "MisuProject\\wwwroot\\index.html",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-01-01T10:37:23.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "home.html",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\home.html",
               "RelativeDocumentMoniker": "MisuProject\\wwwroot\\home.html",
               "ToolTip": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\home.html",
               "RelativeToolTip": "MisuProject\\wwwroot\\home.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-01-01T10:37:20.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\docker-compose.yml",
               "RelativeDocumentMoniker": "MisuProject\\docker-compose.yml",
@@ -112,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Program.cs",
               "RelativeDocumentMoniker": "MisuProject\\Program.cs",
@@ -124,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "MisuProject.http",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\MisuProject.http",
               "RelativeDocumentMoniker": "MisuProject\\MisuProject.http",
@@ -136,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Dockerfile",
               "RelativeDocumentMoniker": "MisuProject\\Dockerfile",
@@ -149,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\AuthModels\\User.cs",
               "RelativeDocumentMoniker": "MisuProject\\Models\\AuthModels\\User.cs",
@@ -161,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "MisuProject\\Data\\AppDbContext.cs",
@@ -173,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "FollowController.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Controllers\\FollowUsers\\FollowController.cs",
               "RelativeDocumentMoniker": "MisuProject\\Controllers\\FollowUsers\\FollowController.cs",
@@ -185,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "UserFollow.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Models\\FollowModels\\UserFollow.cs",
               "RelativeDocumentMoniker": "MisuProject\\Models\\FollowModels\\UserFollow.cs",
@@ -197,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "FollowController.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Documents\\GitHub\\Full-Stack-To-Do-List\\Backend\\Misu-Project\\MisuProject\\MisuProject\\Controllers\\FollowController.cs",
@@ -209,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\appsettings.json",
               "RelativeDocumentMoniker": "MisuProject\\appsettings.json",
@@ -217,12 +302,11 @@
               "RelativeToolTip": "MisuProject\\appsettings.json",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-15T14:52:03.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T14:52:03.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\Controllers\\Auth\\AuthController.cs",
               "RelativeDocumentMoniker": "MisuProject\\Controllers\\Auth\\AuthController.cs",
@@ -234,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "newpass.js",
               "DocumentMoniker": "C:\\Users\\saifa\\Desktop\\folder2\\MisuProject\\MisuProject\\MisuProject\\wwwroot\\js\\newpass.js",
               "RelativeDocumentMoniker": "MisuProject\\wwwroot\\js\\newpass.js",

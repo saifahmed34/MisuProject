@@ -922,7 +922,6 @@ C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\MisuProject.genruntimeconfig.cache
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\ref\MisuProject.dll
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\m0sya6ah1x-{0}-nq4gimk1un-nq4gimk1un.gz
-C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\71syd5451v-{0}-0fchgikjyx-0fchgikjyx.gz
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\0uxkkxtzpg-{0}-4jxvx6l04m-4jxvx6l04m.gz
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\oww8i4u78o-{0}-zqip7njd2z-zqip7njd2z.gz
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\8yn7rjxrzq-{0}-rmt2e0x9ax-rmt2e0x9ax.gz
@@ -931,3 +930,6 @@ C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\7u2cw0flzz-{0}-3etbvgas7t-3etbvgas7t.gz
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\x4bqfjxhcf-{0}-3ycg4lt4ji-3ycg4lt4ji.gz
 C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\n68ebj4hum-{0}-58m9xt6oc9-58m9xt6oc9.gz
+C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\2i2eaag1wa-{0}-svwgbq8ltm-svwgbq8ltm.gz
+C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\71syd5451v-{0}-6ig4su2jqv-6ig4su2jqv.gz
+C:\Users\saifa\Desktop\folder2\MisuProject\MisuProject\MisuProject\obj\Debug\net9.0\compressed\240ljo9djg-{0}-09ccuarabn-09ccuarabn.gz
