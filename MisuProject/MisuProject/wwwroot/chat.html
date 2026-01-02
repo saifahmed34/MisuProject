@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/allmin.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/chat.css">
-    <script src="js/chat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
-    <title>Chat</title>
+    <title>Responsive Chat</title>
 </head>
 <body>
     <section class="contanier">
         <div class="navdiv">
-            <div class="chatbutton">
-                <button class="hvr-underline-from-center"><i class="fa-regular fa-message"></i></button>
-            </div>
-            <a href="#" id="logouts"><i class="fa-solid fa-right-from-bracket"></i></a>
-            <div class="tag hvr-underline-from-center"><a href="home.html"><p>{...}</p></a></div>
-            <div class="navlists">
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="navlists" id="navMenu">
                 <nav>
-                    <li><a href="home.html" class="a1 hvr-unlderline-from-center"><span>Home</span></a></li>
-                    <li><a href="#" class="a2 hvr-underline-from-center">About</a></li>
-                    <li><a href="#" class="a3 hvr-underline-from-center">Contact</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </nav>
             </div>
+
+            <div class="tag">
+                <a href="home.html"><p>{...}</p></a>
+            </div>
+
+            <div class="nav-right">
+                <div class="chatbutton">
+                    <button><i class="fa-regular fa-message"></i></button>
+                </div>
+                <a href="#" id="logouts">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </div>
         </div>
+
         <section class="main">
             <div class="chatcontanier">
-                <div class="chattext">
-                    <div class="chatbn">
-                        <div class="bn">
-                            <input type="text" name="message" placeholder="Enter you message then press Enter...">
-                        </div>
-                    </div>
+                <div class="chattext" id="chatMessages">
+                    <!-- Messages will be loaded here dynamically -->
+                </div>
 
-                     </div>
-                
+                <div class="chatbn">
+                    <div class="bn">
+                        <input type="text" name="message" id="messageInput" placeholder="Enter your message then press Enter...">
                     </div>
                 </div>
             </div>
         </section>
     </section>
+
+    <script src="js/chat.js"></script>
 </body>
 </html>

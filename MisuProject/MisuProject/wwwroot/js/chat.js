@@ -1,9 +1,26 @@
+// Mobile menu toggle
+function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    menu.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const menu = document.getElementById('navMenu');
+    const toggle = document.querySelector('.menu-toggle');
+    
+    if (menu && toggle && !menu.contains(event.target) && !toggle.contains(event.target)) {
+        menu.classList.remove('active');
+    }
+});
+
+// SignalR Chat Implementation
 document.addEventListener("DOMContentLoaded", async () => {
     const messageInput = document.querySelector('input[name="message"]');
     const logoutButton = document.getElementById('logouts');
 
     const token = sessionStorage.getItem('token');
-    const currentUser = sessionStorage.getItem('email'); // Get current user email
+    const currentUser = sessionStorage.getItem('email');
 
     if (!token) {
         window.location.href = 'index.html';
@@ -58,47 +75,51 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     });
 
-    // Display a message bubble
+    // Display a message bubble with new responsive layout
     function appendMessage(sender, content, isCurrentUser) {
-        const chatText = document.querySelector('.chattext');
+        const chatMessages = document.getElementById('chatMessages');
 
-        // Wrapper to prevent overlapping
-        const wrapper = document.createElement('div');
-        wrapper.className = 'message-wrapper';
+        const messageWrapper = document.createElement('div');
+        messageWrapper.className = 'message-wrapper ' + (isCurrentUser ? 'sent' : 'received');
+        
+        console.log('Adding message:', sender, 'isCurrentUser:', isCurrentUser, 'class:', messageWrapper.className);
+
+        const photo = document.createElement('div');
+        photo.className = 'photo';
 
         const messageDiv = document.createElement('div');
-        messageDiv.className = isCurrentUser ? 'message' : 'message2';
+        messageDiv.className = 'message';
 
         const usernameDiv = document.createElement('div');
-        usernameDiv.className = isCurrentUser ? 'username' : 'username2';
+        usernameDiv.className = 'username';
         const usernameP = document.createElement('p');
         usernameP.textContent = sender;
         usernameDiv.appendChild(usernameP);
 
         const contentDiv = document.createElement('div');
-        contentDiv.className = isCurrentUser ? 'content' : 'content2';
-        const contentP = document.createElement('p');
-        contentP.textContent = content;
-        contentDiv.appendChild(contentP);
+        contentDiv.className = 'content';
+        contentDiv.textContent = content;
 
         const timeDiv = document.createElement('div');
-        timeDiv.className = isCurrentUser ? 'time' : 'time2';
+        timeDiv.className = 'time';
         const timeP = document.createElement('p');
-        timeP.textContent = new Date().toLocaleTimeString();
+        timeP.textContent = new Date().toLocaleTimeString('en-US', { 
+            hour: 'numeric', 
+            minute: '2-digit' 
+        });
         timeDiv.appendChild(timeP);
 
         messageDiv.appendChild(usernameDiv);
         messageDiv.appendChild(contentDiv);
         messageDiv.appendChild(timeDiv);
 
-        // Add message to wrapper
-        wrapper.appendChild(messageDiv);
+        messageWrapper.appendChild(photo);
+        messageWrapper.appendChild(messageDiv);
 
-        // Append wrapper to chat area
-        chatText.appendChild(wrapper);
+        chatMessages.appendChild(messageWrapper);
 
         // Scroll to bottom
-        chatText.scrollTop = chatText.scrollHeight;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 
     // Load chat history from the API
@@ -120,10 +141,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Logout logic
-    logoutButton.addEventListener('click', () => {
-        sessionStorage.clear();
-        window.location.href = 'index.html';
-    });
+    if (logoutButton) {
+        logoutButton.addEventListener('click', () => {
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+        });
+    }
 
     // Start connection
     startConnection();
