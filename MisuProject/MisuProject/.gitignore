@@ -1,0 +1,14 @@
+.vs/
+.vscode/
+**/bin
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+ARM/
+ARM64/
+bld/
+bin/
+obj/
