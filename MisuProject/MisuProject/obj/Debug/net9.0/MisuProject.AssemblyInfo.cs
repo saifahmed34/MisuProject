@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MisuProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0d389abc48bdca87d91c9ddadb5c7a9b0367f7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdc8051f4c45c5d6c6a05844ea81aee77c609f18")]
 [assembly: System.Reflection.AssemblyProductAttribute("MisuProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MisuProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
