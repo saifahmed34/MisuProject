@@ -1,195 +1,240 @@
 # MisuProject – Real-Time Chat & User Management System
 
 ## 📌 Overview
-MisuProject is a **full-stack ASP.NET Core Web API application** with:
-- **JWT Authentication**
-- **Role-based authorization**
-- **SignalR real-time chat**
-- **User follow/unfollow feature**
-- **Password reset with OTP email verification**
-- **Full CRUD operations for users**
-- **Frontend built with HTML, CSS, and JavaScript**
 
-This project can be used as a base for real-time communication apps, social platforms, or admin-controlled systems.
+**MisuProject** is a full-stack **ASP.NET Core Web API** application built for real-time communication and user management.  
+It is fully **Dockerized** and supports **automatic EF Core migrations** on startup.
+
+This project can be used as a base for:  
+- Real-time chat applications  
+- Social networking platforms  
+- Admin-controlled systems  
+- Learning ASP.NET Core, SignalR, and Docker  
 
 ---
 
 ## 🚀 Features
 
 ### 🔐 Authentication & Authorization
-- User registration & login with **JWT tokens**
-- **Role-based access control** (`Admin`, `User`)
-- **Password hashing** using BCrypt
-- **Change password** & **Reset password** via OTP email
+- User registration & login using **JWT**  
+- Role-based authorization (**Admin**, **User**)  
+- Secure password hashing with **BCrypt**  
+- Change password functionality  
+- Reset password via **OTP email verification**  
 
 ### 💬 Real-Time Chat
-- **SignalR**-powered WebSocket communication
-- Send messages to specific groups
-- Store chat history in SQL Server
-- Retrieve messages via API
+- **SignalR** WebSocket-based communication  
+- One-to-one and group messaging  
+- Chat messages stored in **SQL Server**  
+- Retrieve chat history through REST APIs  
 
 ### 👥 Social Features
-- Follow & unfollow other users
-- View your followers and following lists
+- Follow and unfollow users  
+- View followers and following lists  
 
 ### 📧 OTP Email System
-- Send OTP codes via email using **MailKit**
-- OTP expiry and usage control
+- OTP generation and verification  
+- Email delivery using **MailKit**  
+- OTP expiration and single-use enforcement  
 
 ---
 
 ## 🛠 Tech Stack
 
-**Backend**
-- ASP.NET Core Web API
-- Entity Framework Core
-- SQL Server
-- SignalR
-- Mapster (DTO mapping)
-- JWT Authentication
-- BCrypt (password hashing)
-- MailKit (email sending)
+### Backend
+- ASP.NET Core Web API (.NET 9)  
+- Entity Framework Core  
+- SQL Server 2022  
+- SignalR  
+- JWT Authentication  
+- Mapster (DTO mapping)  
+- BCrypt  
+- MailKit  
 
-**Frontend**
-- HTML, CSS, JavaScript (Vanilla JS)
-- Fetch API for REST calls
-- SignalR JS client for real-time updates
+### Frontend
+- HTML, CSS, Vanilla JavaScript  
+- Fetch API  
+- SignalR JavaScript client  
+
+### DevOps
+- Docker  
+- Docker Compose  
+- SQL Server persistent volumes  
+- Automatic EF Core migrations  
 
 ---
 
 ## 📂 Project Structure
-```
+
+```text
 MisuProject/
 ├── Controllers/
-│   ├── AuthController.cs        # Authentication & user management
-│   ├── FollowController.cs      # Follow/unfollow logic
-│   ├── MessageController.cs     # Chat messages API
+│   ├── AuthController.cs
+│   ├── FollowController.cs
+│   ├── MessageController.cs
 ├── Hubs/
-│   └── ChatHub.cs               # SignalR hub for real-time chat
-├── Models/                      # Entity models
-├── Dtos/                        # Data Transfer Objects
+│   └── ChatHub.cs
+├── Models/
+├── Dtos/
 ├── Data/
-│   └── AppDbContext.cs          # EF Core database context
-├── wwwroot/                     # Frontend HTML/CSS/JS
-├── Program.cs                   # Service configuration & app entry
-└── README.md                    # This file
+│   └── AppDbContext.cs
+├── wwwroot/
+│   └── Frontend (HTML / CSS / JS)
+├── Dockerfile
+├── docker-compose.yml
+├── Program.cs
+└── README.md
 ```
+## Docker Setup
+### Dockerfile
+```
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+COPY . .
+RUN dotnet publish "MisuProject.csproj" -o /published /p:UseAppHost=false
 
----
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
+WORKDIR /app
+COPY --from=build /published .
+EXPOSE 5189
+ENTRYPOINT ["dotnet", "MisuProject.dll"]
+```
+## docker-compose.yml
+```
+version: "3.8"
 
-## ⚙️ Installation & Setup
+services:
+  backend:
+    build:
+      context: ./
+    container_name: webApi
+    ports:
+      - "5189:5189"
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:5189
+    depends_on:
+      - db
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/yourusername/MisuProject.git
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_server_container
+    environment:
+      SA_PASSWORD: "Password123@"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+volumes:
+  sql_data:
+```
+### ⚙️ Configuration
+### Database Connection String
+```
+{
+  "ConnectionStrings": {
+    "connect": "Server=db;Database=MisuDb;User Id=sa;Password=Password123@;TrustServerCertificate=True;"
+  }
+}
+```
+## JWT Settings
+```
+{
+  "Jwt": {
+    "Key": "YourSecretKeyHere",
+    "Issuer": "MisuProject",
+    "Audience": "MisuProjectUsers"
+  }
+}
+```
+### Email Settings (OTP)
+```
+{
+  "EmailSettings": {
+    "SenderName": "MisuProject",
+    "SenderEmail": "your-email@example.com",
+    "SmtpServer": "smtp.yourprovider.com",
+    "Port": "587",
+    "Username": "your-email@example.com",
+    "Password": "your-app-password"
+  }
+}
+```
+### ▶️ Running the Project
+## Clone Repository
+```
+git clone https://github.com/saifahmed34/MisuProject.git
 cd MisuProject
 ```
-
-### 2️⃣ Configure the database
-Update **`appsettings.json`** with your SQL Server connection string:
-```json
-"ConnectionStrings": {
-  "connect": "Server=YOUR_SERVER;Database=MisuDb;Trusted_Connection=True;TrustServerCertificate=True;"
-}
+## Build and Run Containers
+```
+docker compose up --build
 ```
 
-### 3️⃣ Configure JWT settings
-In **`appsettings.json`**:
-```json
-"Jwt": {
-  "Key": "YourSecretKeyHere",
-  "Issuer": "YourIssuer",
-  "Audience": "YourAudience"
-}
-```
+### ✅ Database migrations are applied automatically
+### ✅ Default roles (Admin, User) are seeded automatically
 
-### 4️⃣ Configure Email settings (for OTP)
-```json
-"EmailSettings": {
-  "SenderName": "MisuProject",
-  "SenderEmail": "your-email@example.com",
-  "SmtpServer": "smtp.yourprovider.com",
-  "Port": "587",
-  "Username": "your-email@example.com",
-  "Password": "the app password that found in 2 step verification"
-}
-```
-
-### 5️⃣ Run migrations & update database
-```bash
-dotnet ef database update
-```
-
-### 6️⃣ Run the application
-```bash
-dotnet run
-```
-
-The API will be available at:
-```
-http://localhost:5000
-```
-SignalR hub:
-```
-http://localhost:5000/chatHub
-```
-
----
+## 🌐 Application URLs
+API Base URL: http://localhost:5189
+SignalR Hub: http://localhost:5189/chatHub
 
 ## 💻 Frontend
-The `wwwroot` folder contains HTML, CSS, and JS files for:
-- Login/Register
+
+Frontend files are located in the wwwroot directory:
+
+- Login & Register
+
 - Real-time chat interface
-- Follow/unfollow UI
 
-Simply open the HTML files in a browser (after running the backend).
+- Follow / Unfollow UI
 
----
+- Open HTML files in the browser after starting the backend.
 
-## 🔑 Default Roles
-When the app starts, it automatically seeds:
-- **Admin**
-- **User**
+🔑 Default Roles
 
----
+Automatically created on startup:
+
+- Admin
+
+- User
 
 ## 📜 API Endpoints
-
 ### Authentication
-- `POST /api/auth/register` – Register new user
-- `POST /api/auth/login` – Login & get JWT
-- `POST /api/auth/change-password` – Change password
-- `POST /api/auth/forgot-password` – Send OTP email
-- `POST /api/auth/verify-otp` – Verify OTP
-- `POST /api/auth/reset-password` – Reset password
+```
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/change-password
+POST /api/auth/forgot-password
+POST /api/auth/verify-otp
+POST /api/auth/reset-password
+```
+## User Management
+```
+GET /api/auth/users
+GET /api/auth/users/{id}
+PUT /api/auth/users/update/{id}
+DELETE /api/auth/users/del/{id}  # Admin only
+```
+## Follow System
+```
+POST /api/follow/{followeeId}
+DELETE /api/follow/{followeeId}
+GET /api/follow/my-following
+GET /api/follow/my-followers
+```
+## Chat
+```
+POST /api/message/send
+GET /api/message/messages
+SignalR Hub: /chatHub
+```
+### Notes
 
-### User Management
-- `GET /api/auth/users` – Get all users
-- `GET /api/auth/users/{id}` – Get user by ID
-- `PUT /api/auth/users/update/{id}` – Update user
-- `DELETE /api/auth/users/del/{id}` – Delete user (Admin only)
+- No manual EF Core migrations required
 
-### Follow System
-- `POST /api/follow/{followeeId}` – Follow a user
-- `DELETE /api/follow/{followeeId}` – Unfollow a user
-- `GET /api/follow/my-following` – Get my following list
-- `GET /api/follow/my-followers` – Get my followers list
+- SQL Server data is persisted using Docker volumes
 
-### Chat
-- `POST /api/message/send` – Send a message (non-SignalR)
-- `GET /api/message/messages` – Get messages
-- **SignalR Hub** – `/chatHub` for real-time messages
+- Uses Docker internal networking (db as SQL host)
 
----
-
-## 📸 Screenshots
-<img width="1917" height="901" alt="image" src="https://github.com/user-attachments/assets/06b5064a-5b9d-4ae1-8112-f6bb5726fc3e" />
-
-<img width="1730" height="837" alt="image" src="https://github.com/user-attachments/assets/f7475e40-8a94-49d3-b937-0ff2805c6c0f" />
-
-
-
----
-
-## 📄 License
-This project is licensed under the MIT License – feel free to use and modify it.
+- Ready for local development and production deployment
