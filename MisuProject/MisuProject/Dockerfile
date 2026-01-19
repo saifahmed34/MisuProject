@@ -1,19 +1,10 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY ["MisuProject.csproj", "./"]
-RUN dotnet restore "./MisuProject.csproj"
 COPY . .
-RUN dotnet build "MisuProject.csproj" -c Release -o /app/build
+RUN dotnet publish "MisuProject.csproj" -o /published /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
+COPY --from=build /published .
 EXPOSE 5189
-
-
-FROM build AS publish
-RUN dotnet publish "MisuProject.csproj" -c Release -o /app/publish
-
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "MisuProject.dll"]
