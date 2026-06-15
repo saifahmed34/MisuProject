@@ -252,7 +252,7 @@ namespace MisuProject.Controllers.Auth
             message.Body = new TextPart("HTML")
             {
                 Text = text
-                       
+
             };
 
             using var client = new SmtpClient();
@@ -275,10 +275,10 @@ namespace MisuProject.Controllers.Auth
                 .FirstOrDefaultAsync();
 
             if (otpRecord == null)
-                return BadRequest(new{Message="Invalid or expired OTP."});
+                return BadRequest(new { Message = "Invalid or expired OTP." });
 
             if (otpRecord.ExpirationTime < DateTime.UtcNow)
-                return BadRequest(new{Message = "OTP has expired."});
+                return BadRequest(new { Message = "OTP has expired." });
 
             otpRecord.IsUsed = true;
             await _context.SaveChangesAsync();
@@ -306,7 +306,7 @@ namespace MisuProject.Controllers.Auth
 
             if (otpRecord.ExpirationTime < DateTime.UtcNow)
                 return BadRequest(new { Message = "OTP expired." });
-            
+
 
             // Reset password
             user.HashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
